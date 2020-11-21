@@ -38,8 +38,7 @@ public class MainController {
         return "index";
     }
 
-    //<td><a class="btn btn-primary" th:href="@{/delete/{id}(id=${user.id})}"><i
-    //                                class="fas fa-user-times ml-2"></i></a></td>
+                               
     @DeleteMapping("/delete")
     public String delete(User user) {
         userService.deleteUser(user);
